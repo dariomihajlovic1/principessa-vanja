@@ -22,15 +22,8 @@ html {
 #sandd-logo-page2 {
   position:absolute;
   width: 50px;
-  top:350px;
+  top:650px;
   right:260px;
-}
-
-#sandd-logo-page3 {
-  position:absolute;
-  width: 50px;
-  top:580px;
-  right:25px;
 }
 
 *,
@@ -91,7 +84,7 @@ html {
   }
 }
 
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
   .col-md-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
@@ -104,8 +97,16 @@ html {
     max-width: 50%;
   }
 }
-
 @media (min-width: 992px) {
+  #sandd-logo-page2 {
+    right: 350px;
+  }
+}
+ @media (min-width: 992px) {
+  #sandd-logo-page1 {
+    top: 330px;
+  }
+  
   .col-lg-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
@@ -346,8 +347,8 @@ p, address {
 }
 
 @media (max-width: 991px) {
-  .tm-header-inner {
-    padding: 30px 15px;
+  .tm-header-inner { /*000000000000000000000000000000000*/
+    padding: 50px 0px;
   }
 }
 
@@ -360,7 +361,6 @@ p, address {
 
 .logopos {
   position:absolute;
-  display:inline-block;
   width:35%;
   top:-400px;
   left:1275px;
@@ -438,16 +438,6 @@ p, address {
   background-color: #227051;
   color: #ffffff;
 }
-
-#pitanja {
-  border: 1.5px solid #ffffff;
-  background-color: #227051;
-}
-#pitanja:hover {
-  background-color: #227051;
-  color: #ffffff;
-}
-
 
 .tm-nav-link.active,
 
@@ -591,13 +581,7 @@ p, address {
   max-width: 530px;
 }
 
-@media (min-width: 768px) {
-  .tm-description-box {
-    padding-left: 5px;
-    padding-right: 40px;
-    margin-top: 0;
-  }
-}
+
 
 .tm-right {
   align-self: flex-end;
@@ -630,11 +614,7 @@ p, address {
   margin-bottom: 60px;
 }
 
-@media (min-width: 420px) {
-  .tm-person {
-    flex-direction: row;
-  }
-}
+
 
 .tm-person-description {
   padding-left: 20px;
@@ -649,11 +629,7 @@ p, address {
   margin-top: 15px;
 }
 
-@media (min-width: 420px) {
-  .tm-person-name {
-    margin-top: 0;
-  }
-}
+
 
 .tm-person-title {
   color: #C39;
@@ -724,15 +700,7 @@ p, address {
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
- .tm-history-img {
-    max-width: 50%;
-  }
-  
-  .tm-history-inner {
-    flex-direction: row;
-  }
-}
+
 
 .tm-history-title {
   font-size: 1.6rem;
@@ -750,12 +718,7 @@ p, address {
   margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
- .tm-history-text {
-    max-width: auto;
-    margin: 0 auto 0 35px;
-  } 
-}
+
 
 /* Contact Page */
 .tm-contact-form {
@@ -766,6 +729,20 @@ p, address {
  .tm-contact-form {
     max-width: 310px;
   } 
+}
+
+/* Hide the element with class 'neighbourhood-img' on screens wider than 767px */
+@media screen and (min-width: 768px) {
+  .neighbourhood-img img {
+    display: none;
+  }
+}
+
+/* Show the element with class 'neighbourhood-img' on screens narrower than 768px */
+@media screen and (max-width: 767px) {
+  .neighbourhood-img img {
+    display: block;
+  }
 }
 
 .tm-d-flex {
