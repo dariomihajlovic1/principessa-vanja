@@ -60,6 +60,7 @@ html {
 .col-md-6,
 .col-sm-6, 
 .col-12 {
+  text-decoration: none;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -97,16 +98,6 @@ html {
     max-width: 50%;
   }
 }
-@media (min-width: 992px) {
-  #sandd-logo-page2 {
-    right: 350px;
-  }
-}
- @media (min-width: 992px) {
-  #sandd-logo-page1 {
-    top: 330px;
-  }
-  
   .col-lg-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
@@ -124,7 +115,7 @@ html {
     flex: 0 0 50%;
     max-width: 50%;
   }
-}
+
 
 .tm-btn {
   display: inline-block;
@@ -290,15 +281,6 @@ p, address {
   padding-left: 30%;
 }
 
-#block {
-  position: absolute;
-  width: 250px;
-  height: 50px;
-  top: 585px;
-  right: 680px;
-  opacity: 0;
-}
-
 /* Set width and height in JS */
 .placeholder {
   width: 100%;
@@ -360,10 +342,11 @@ p, address {
 }
 
 .logopos {
-  position:absolute;
-  width:35%;
-  top:-400px;
-  left:1275px;
+  position: absolute;
+  width:200px;
+  height:200px;
+  top:-380px;
+  right: -780px;
 }
 
 .tm-site-text-box {
