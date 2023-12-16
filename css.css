@@ -456,8 +456,42 @@ p, address {
 .tm-section,
 .tm-container-inner,
 .tm-container-inner-2 {
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: auto;
+}
+
+@media (max-width: 375px) {
+  #pizza1,
+  #pizza6,
+  #pizza7,
+  #pizza2,
+  #pizza8,
+  #pizza5,
+  #pizza71,
+  #pizza81,
+  .sandd-logo-page1,
+  .sandd-logo-page2,
+   {
+    display: none;
+  } 
+}
+
+@media (max-width: 391px) {
+  .tm-site-logo {
+    display:none;
+  }
+}
+
+@media (max-width: 1273px) {
+  .logopos {
+    display: none;
+  }
+}
+
+@media (max-width: 1546px) {
+  .logopos {
+    right: -650px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
